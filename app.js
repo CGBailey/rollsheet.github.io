@@ -21,12 +21,8 @@ var statTest = /^[8-9]$|^1[0-9]$|^20$/
 var User = {
   playerName: ""
   characterName: ""
-  charClass: {}
-  charRace: {}
   alignment: ""
   maxHitPoints: ""
-  hitDice: ""
-  speed: ""
   currentHitPoints:""
   stats: []
 }
@@ -185,7 +181,7 @@ $(".statSet").on('click',function(){
 });
 $(".setClass").on("click",function(){
   if($(".bar").selected){
-    User.prototype.class.bard: {
+    User.prototype.barbarian: {
       one:{}
       two:{}
       three:{}
@@ -206,9 +202,227 @@ $(".setClass").on("click",function(){
       eighteen:{}
       nineteen:{}
       twenty:{}
+    }
   }
+  if($(".bard").selected){
+    User.prototype.bard: {
+      one:{}
+      two:{}
+      three:{}
+      four:{}
+      five:{}
+      six:{}
+      seven:{}
+      eight:{}
+      nine:{}
+      ten:{}
+      eleven:{}
+      twelve:{}
+      thurteen:{}
+      fourteen:{}
+      fifteen:{}
+      sixteen:{}
+      seventeen:{}
+      eighteen:{}
+      nineteen:{}
+      twenty:{}
+    }
   }
-
+  if($(".cle").selected){
+    User.prototype.cleric: {
+      one:{}
+      two:{}
+      three:{}
+      four:{}
+      five:{}
+      six:{}
+      seven:{}
+      eight:{}
+      nine:{}
+      ten:{}
+      eleven:{}
+      twelve:{}
+      thurteen:{}
+      fourteen:{}
+      fifteen:{}
+      sixteen:{}
+      seventeen:{}
+      eighteen:{}
+      nineteen:{}
+      twenty:{}
+    }
+  }
+  if($(".dru").selected){
+    User.prototype.druid: {
+      one:{}
+      two:{}
+      three:{}
+      four:{}
+      five:{}
+      six:{}
+      seven:{}
+      eight:{}
+      nine:{}
+      ten:{}
+      eleven:{}
+      twelve:{}
+      thurteen:{}
+      fourteen:{}
+      fifteen:{}
+      sixteen:{}
+      seventeen:{}
+      eighteen:{}
+      nineteen:{}
+      twenty:{}
+    }
+  }
+  if($(".ran").selected){
+    User.prototype.ranger: {
+      one:{}
+      two:{}
+      three:{}
+      four:{}
+      five:{}
+      six:{}
+      seven:{}
+      eight:{}
+      nine:{}
+      ten:{}
+      eleven:{}
+      twelve:{}
+      thurteen:{}
+      fourteen:{}
+      fifteen:{}
+      sixteen:{}
+      seventeen:{}
+      eighteen:{}
+      nineteen:{}
+      twenty:{}
+    }
+  }
+  if($(".rou").selected){
+    User.prototype.rouge: {
+      one:{}
+      two:{}
+      three:{}
+      four:{}
+      five:{}
+      six:{}
+      seven:{}
+      eight:{}
+      nine:{}
+      ten:{}
+      eleven:{}
+      twelve:{}
+      thurteen:{}
+      fourteen:{}
+      fifteen:{}
+      sixteen:{}
+      seventeen:{}
+      eighteen:{}
+      nineteen:{}
+      twenty:{}
+    }
+  }
+  if($(".soc").selected){
+    User.prototype.sorceror: {
+      one:{}
+      two:{}
+      three:{}
+      four:{}
+      five:{}
+      six:{}
+      seven:{}
+      eight:{}
+      nine:{}
+      ten:{}
+      eleven:{}
+      twelve:{}
+      thurteen:{}
+      fourteen:{}
+      fifteen:{}
+      sixteen:{}
+      seventeen:{}
+      eighteen:{}
+      nineteen:{}
+      twenty:{}
+    }
+  }
+  if($(".war").selected){
+    User.prototype.warlock= {
+      one={}
+      two={}
+      three={}
+      four={}
+      five={}
+      six:{}
+      seven:{}
+      eight:{}
+      nine:{}
+      ten:{}
+      eleven:{}
+      twelve:{}
+      thurteen:{}
+      fourteen:{}
+      fifteen:{}
+      sixteen:{}
+      seventeen:{}
+      eighteen:{}
+      nineteen:{}
+      twenty:{}
+    }
+  }
+  if($(".wiz").selected){
+    User.prototype.wizard= {
+      one:{}
+      two:{}
+      three:{}
+      four:{}
+      five:{}
+      six:{}
+      seven:{}
+      eight:{}
+      nine:{}
+      ten:{}
+      eleven:{}
+      twelve:{}
+      thurteen:{}
+      fourteen:{}
+      fifteen:{}
+      sixteen:{}
+      seventeen:{}
+      eighteen:{}
+      nineteen:{}
+      twenty:{}
+    }
+  }
 })
+$(".setRace").on('click',function(){
+  if($(".hu").selected){
+    User.prototype.human =
+  }
+  if($(".el").selected){
+    User.prototype.elf =
+  }
+  if($(".dw").selected){
+    User.prototype.dwarf =
+  }
+  if($(".gn").selected){
+    User.prototype.gnome =
+  }
+  if($(".ti").selected){
+    User.prototype.tiefling =
+  }
+  if($(".dr").selected){
+    User.prototype.dragonkin =
+  }
+  if($(".he").selected){
+    User.prototype.halfELf =
+  }
+  if($(".ho").selected){
+    User.prototype.halfOrc =
+  }
+})
+
 
 });
