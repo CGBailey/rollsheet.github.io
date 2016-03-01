@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Document</title>
 </head>
 <body>
@@ -39,6 +42,9 @@
           <option class = "bard"value="">Bard</option>
           <option class = "cle"value="">Cleric</option>
           <option class = "dru"value="">Druid</option>
+          <option class = "fig"value="">Fighter</option>
+          <option class = "mon"value="">Monk</option>
+          <option class = "pal"value="">Paladin</option>
           <option class = "ran"value="">Ranger</option>
           <option class = "rou"value="">Rouge</option>
           <option class = "soc"value="">Sorcerer</option>
@@ -74,11 +80,17 @@
           <option value="value3">Lawful Evil</option>
         </select>
         </label>
+      <section class="headButtonBox">
+        <button class="muffinButton" type="button" name="button">Set Class</button>
+        <button class="muffinButton" type="button" name="button">Set Race</button>
+        <button class="muffinButton" type="button" name="button">Set Level</button>
+      </section>
     </form>
   </header>
   <main>
     <section class="sRight">
       <section class = "statsCol">
+        <button class="statSet" type="button" name="button">Set Stats</button>
         <section class = 'stat'>
           Strength
           <p class = "strMod">
