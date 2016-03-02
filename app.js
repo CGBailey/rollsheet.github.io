@@ -1073,5 +1073,6 @@ $(".setRace").on('click',function() {
   }
 })
 
+$(".profBo").innerText(player.proficency)
 
 });
