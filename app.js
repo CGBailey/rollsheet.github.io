@@ -1,8 +1,10 @@
 $(function(){
+  // button test
   $('.muffinButton').on("click", function() {
     console.log('muffin button')
   })
-  function roll20(){
+// various dice rollers
+function roll20(){
   var d20Result = Math.floor(Math.random()*20+1);
 }
 function roll12(){
@@ -31,7 +33,7 @@ function User () {
   this.proficency = ""
 };
 var player = new User();
-
+// sets input base stats and applicable modifiers works kind of
 $(".statSet").on('click',function(){
   User.prototype.stats = [$(".str").val(),$(".dex").val(),$(".con").val(),$(".int").val(),$(".wis").val(),$(".car").val()]
   $('#strStat').append("<p>player.stats[0]</p>");
@@ -52,54 +54,67 @@ $(".statSet").on('click',function(){
     }
     if(parseInt(player.stats[0]) === 10||parseInt(player.stats[0]) === 11){
       $('.strMod').text('+ 0');
+      $('.strMod').attr("value", "0");
       console.log("marp");
     }
     if(parseInt(player.stats[0]) === 12||parseInt(player.stats[0]) === 13){
       $('.strMod').text('+ 1');
+      $('.strMod').attr("value", "1");
       console.log("marp");
     }
     if(parseInt(player.stats[0]) === 14||parseInt(player.stats[0]) === 15){
       $('.strMod').text('+2');
+      $('.strMod').attr("value", "2");
       console.log("marp");
     }
     if(parseInt(player.stats[0]) === 16||parseInt(player.stats[0]) === 17){
       $('.strMod').text('+ 3');
+      $('.strMod').attr("value", "3");
       console.log("marp");
     }
     if(parseInt(player.stats[0]) === 18||parseInt(player.stats[0]) === 19){
       $('.strMod').text('+ 4');
+      $('.strMod').attr("value", "4");
       console.log("marp");
     }
     if(parseInt(player.stats[0]) === 20){
       $('.strMod').text('+ 5');
+      $('.strMod').attr("value", "5");
       console.log("marp");
     }
     if(parseInt(player.stats[1]) === 8||parseInt(player.stats[1]) === 9){
       $('.dexMod').text('- 1');
+
       console.log("marp");
     }
     if(parseInt(player.stats[1]) === 10||parseInt(player.stats[1]) === 11){
       $('.dexMod').text('+ 0');
+      $('.dexMod').attr("value", "0");
       console.log("marp");
     }
     if(parseInt(player.stats[1]) === 12||parseInt(player.stats[1]) === 13){
       $('.dexMod').text('+ 1');
+      $('.dexMod').attr("value", "1");
       console.log("marp");
     }
     if(parseInt(player.stats[1]) === 14||parseInt(player.stats[1]) === 15){
       $('.dexMod').text('+ 2');
+      $('.dexMod').attr("value", "2");
       console.log("marp");
     }
     if(parseInt(player.stats[1]) === 16||parseInt(player.stats[1]) === 17){
       $('.dexMod').text('+ 3');
+      $('.dexMod').attr("value", "3");
       console.log("marp");
     }
     if(parseInt(player.stats[1]) === 18||parseInt(player.stats[1]) === 19){
       $('.dexMod').text('+ 4');
+      $('.dexMod').attr("value", "4");
       console.log("marp");
     }
     if(parseInt(player.stats[1]) === 20){
       $('.dexMod').text('+ 5');
+      $('.dexMod').attr("value", "5");
       console.log("marp");
     }
     if(parseInt(player.stats[2]) === 8||parseInt(player.stats[2]) === 9){
@@ -108,26 +123,32 @@ $(".statSet").on('click',function(){
     }
     if(parseInt(player.stats[2]) === 10||parseInt(player.stats[2]) === 11){
       $('.conMod').text('+ 0');
+      $('.conMod').attr("value", "0");
       console.log("marp");
     }
     if(parseInt(player.stats[2]) === 12||parseInt(player.stats[2]) === 13){
       $('.conMod').text('+ 1');
+      $('.conMod').attr("value", "1");
       console.log("marp");
     }
     if(parseInt(player.stats[2]) === 14||parseInt(player.stats[2]) === 15){
       $('.conMod').text('+ 2');
+      $('.conMod').attr("value", "2");
       console.log("marp");
     }
     if(parseInt(player.stats[2]) === 16||parseInt(player.stats[2]) === 17){
       $('.conMod').text('+ 3');
+      $('.conMod').attr("value", "3");
       console.log("marp");
     }
     if(parseInt(player.stats[2]) === 18||parseInt(player.stats[2]) === 19){
       $('.conMod').text('+ 4');
+      $('.conMod').attr("value", "4");
       console.log("marp");
     }
     if(parseInt(player.stats[2]) === 20){
       $('.conMod').text('+ 5');
+      $('.conMod').attr("value", "5");
       console.log("marp");
     }
     if(parseInt(player.stats[3]) === 8||parseInt(player.stats[3]) === 9){
@@ -136,26 +157,32 @@ $(".statSet").on('click',function(){
     }
     if(parseInt(player.stats[3]) === 10||parseInt(player.stats[3]) === 11){
       $('.intMod').text('+ 0');
+      $('.intMod').attr("value", "0");
       console.log("marp");
     }
     if(parseInt(player.stats[3]) === 12||parseInt(player.stats[3]) === 13){
       $('.intMod').text('+ 1');
+      $('.intMod').attr("value", "1");
       console.log("marp");
     }
     if(parseInt(player.stats[3]) === 14||parseInt(player.stats[3]) === 15){
       $('.intMod').text('+ 2');
+      $('.intMod').attr("value", "2");
       console.log("marp");
     }
     if(parseInt(player.stats[3]) === 16||parseInt(player.stats[3]) === 17){
       $('.intMod').text('+ 3');
+      $('.intMod').attr("value", "3");
       console.log("marp");
     }
     if(parseInt(player.stats[3]) === 18||parseInt(player.stats[3]) === 19){
       $('.intMod').text('+ 4');
+      $('.intMod').attr("value", "4");
       console.log("marp");
     }
     if(parseInt(player.stats[3]) === 20){
       $('.intMod').text('+ 5');
+      $('.intMod').attr("value", "5");
       console.log("marp");
     }
     if(parseInt(player.stats[4]) === 8||parseInt(player.stats[4]) === 9){
@@ -164,26 +191,32 @@ $(".statSet").on('click',function(){
     }
     if(parseInt(player.stats[4]) === 10||parseInt(player.stats[4]) === 11){
       $('.wisMod').text('+ 0');
+      $('.wisMod').attr("value", "0");
       console.log("marp");
     }
     if(parseInt(player.stats[4]) === 12||parseInt(player.stats[4]) === 13){
       $('.wisMod').text('+ 1');
+      $('.intMod').attr("value", "1");
       console.log("marp");
     }
     if(parseInt(player.stats[4]) ===14||parseInt(player.stats[4]) === 15){
       $('.wisMod').text('+ 2');
+      $('.intMod').attr("value", "2");
       console.log("marp");
     }
     if(parseInt(player.stats[4]) === 16||parseInt(player.stats[4]) === 17){
       $('.wisMod').text('+ 3');
+      $('.intMod').attr("value", "3");
       console.log("marp");
     }
     if(parseInt(player.stats[4]) === 18||parseInt(player.stats[4]) === 19){
       $('.wisMod').text('+ 4');
+      $('.intMod').attr("value", "4");
       console.log("marp");
     }
     if(parseInt(player.stats[4])===20){
       $('.wisMod').text('+ 5');
+      $('.intMod').attr("value", "5");
       console.log("marp");
     }
     if(parseInt(player.stats[5]) === 8||parseInt(player.stats[5]) === 9){
@@ -192,31 +225,38 @@ $(".statSet").on('click',function(){
     }
     if(parseInt(player.stats[5]) === 10||parseInt(player.stats[5]) === 11){
       $('.carMod').text('+ 0');
+      $('.carMod').attr("value", "0");
       console.log("marp");
     }
     if(parseInt(player.stats[5]) === 12||parseInt(player.stats[5]) === 13){
       $('.carMod').text('+ 1');
+      $('.carMod').attr("value", "1");
       console.log("marp");
     }
     if(parseInt(player.stats[5]) === 14||parseInt(player.stats[5]) === 15){
       $('.carMod').text('+ 2');
+      $('.carMod').attr("value", "2");
       console.log("marp");
     }
     if(parseInt(player.stats[5]) === 16||parseInt(player.stats[5]) === 17){
       $('.carMod').text('+ 3');
+      $('.carMod').attr("value", "3");
       console.log("marp");
     }
     if(parseInt(player.stats[5]) === 18||parseInt(player.stats[5]) === 19){
       $('.carMod').text('+ 4');
+      $('.carMod').attr("value", "4");
       console.log("marp");
     }
     if(parseInt(player.stats[5]) === 20){
       $('.carMod').text('+ 5');
+      $('.carMod').attr("value", "5");
       console.log("marp");
     }
     console.log(player.stats);
 });
 
+// sets the character class attributes such as hit dice and proficency dice
 $(".setClass").on("click",function(){
   if($(".bar").selected){
     console.log("working")
@@ -999,6 +1039,8 @@ $(".setClass").on("click",function(){
       }
   }
 })
+
+// sets the racial modifiers for each character
 $(".setRace").on('click',function() {
   if($(".hu").selected) {
     // User.prototype.human = function() {
@@ -1072,7 +1114,5 @@ $(".setRace").on('click',function() {
     console.log("I'm broken :(");
   }
 })
-
-$(".profBo").innerText(player.proficency)
 
 });
