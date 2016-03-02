@@ -217,370 +217,861 @@ $(".statSet").on('click',function(){
     console.log(player.stats);
 });
 
-// $(".setClass").on("click",function(){
-//   if($(".bar").selected){
-//     User.prototype.barbarian= {
-//       hitDice = roll12()+parseInt($('.conMod').val())
-//       one = function () {
-//
-//       }
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".bard").selected){
-//     User.prototype.bard= {
-//       hitDice = roll8()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".cle").selected){
-//     User.prototype.cleric= {
-//       hitDice = roll8()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".dru").selected){
-//     User.prototype.druid= {
-//       hitDice = roll8()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".fig").selected){
-//     User.prototype.figther= {
-//       hitDice = roll10()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".mon").selected){
-//     User.prototype.monk= {
-//       hitDice = roll8()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".pal").selected){
-//     User.prototype.paladin= {
-//       hitDice = roll10()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".ran").selected){
-//     User.prototype.ranger= {
-//       hitDice = roll10()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".rou").selected){
-//     User.prototype.rouge = {
-//       hitDice = roll8()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".soc").selected){
-//     User.prototype.sorceror = {
-//       hitDice = roll6()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".war").selected){
-//     User.prototype.warlock = {
-//       hitDice = roll8()+parseInt($('.conMod').val());
-//       one={}
-//       two={}
-//       three={}
-//       four={}
-//       five={}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-//   if($(".wiz").selected){
-//     User.prototype.wizard= {
-//       hitDice = roll6()+parseInt($('.conMod').val());
-//       one:{}
-//       two:{}
-//       three:{}
-//       four:{}
-//       five:{}
-//       six:{}
-//       seven:{}
-//       eight:{}
-//       nine:{}
-//       ten:{}
-//       eleven:{}
-//       twelve:{}
-//       thurteen:{}
-//       fourteen:{}
-//       fifteen:{}
-//       sixteen:{}
-//       seventeen:{}
-//       eighteen:{}
-//       nineteen:{}
-//       twenty:{}
-//     }
-//   }
-// })
-// $(".setRace").on('click',function(){
-//   if($(".hu").selected){
-//     User.prototype.human() = function(){
-//         $(".str").text()= parseInt($(".str").data()) + 1
-//
-//         $(".dex").text()= parseInt($(".dex").data()) + 1
-//
-//         $(".con").text()= parseInt($(".con").data()) + 1
-//
-//         $(".int").text()= parseInt($(".int").data()) + 1
-//
-//         $(".wis").text()= parseInt($(".wis").data()) + 1
-//
-//         $(".car").text()= parseInt($(".car").data()) + 1
-//     }
-//   }
-//   if($(".el").selected){
-//     User.prototype.elf = function () {
-//       $(".dex").text()= parseInt($(".dex").data()) + 2
-//     }
-//   }
-//   if($(".dw").selected){
-//     User.prototype.dwarf = function () {
-//       $(".con").text()= parseInt($(".con").data()) + 2
-//     }
-//   }
-//   if($(".gn").selected){
-//     User.prototype.gnome = function () {
-//       $(".int").text()= parseInt($(".int").data()) + 2
-//     }
-//   if($(".ha").selected){
-//     User.prototype.gnome = function () {
-//       $(".dex").text()= parseInt($(".dex").data()) + 2
-//     }
-//   }
-//   if($(".ti").selected){
-//     User.prototype.tiefling = function () {
-//       $(".car").text()= parseInt($(".car").data()) + 2;
-//       $(".int").text()= parseInt($(".int").data()) + 1;
-//     }
-//   }
-//   if($(".dr").selected){
-//     User.prototype.dragonborn = function () {
-//       $(".car").text()= parseInt($(".car").data()) + 1;
-//       $(".str").text()= parseInt($(".str").data()) + 2;
-//     }
-//   }
-//   if($(".he").selected){
-//     User.prototype.halfELf = function () {
-//       $(".int").text()= parseInt($(".int").data()) + 1;
-//         $(".car").text()= parseInt($(".car").data()) + 2;
-//     }
-//   }
-//   if($(".ho").selected){
-//     User.prototype.halfOrc = function () {
-//       $(".str").text()= parseInt($(".str").data()) + 2;
-//       $(".con").text()= parseInt($(".con").data()) + 1
-//     }
-//   }
-// })
+$(".setClass").on("click",function(){
+  if($(".bar").selected){
+    console.log("working")
+    User.prototype.class=
+      User.prototype.hitDice = roll12()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".bard").selected){
+    console.log('working')
+    User.prototype.class=
+      this.hitDice = roll8()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".cle").selected){
+    console.log('working');
+    User.prototype.class=
+      this.hitDice = roll8()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".dru").selected){
+    console.log('working');
+    User.prototype.druid=
+      this.hitDice = roll8()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".fig").selected){
+    console.log('working');
+    User.prototype.figther=
+      this.hitDice = roll10()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".mon").selected){
+    console.log('working');
+    User.prototype.monk=
+      this.hitDice = roll8()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".pal").selected){
+    console.log('working');
+    User.prototype.paladin=
+      this.hitDice = roll10()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".ran").selected){
+    console.log('working');
+    User.prototype.ranger=
+      this.hitDice = roll10()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".rou").selected){
+    console.log('working');
+    User.prototype.rouge =
+      this.hitDice = roll8()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".soc").selected){
+    console.log('working');
+    User.prototype.sorceror =
+      this.hitDice = roll6()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".war").selected){
+    console.log('working');
+    User.prototype.warlock =
+      this.hitDice = roll8()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+  if($(".wiz").selected){
+    console.log('working');
+    User.prototype.wizard=
+      this.hitDice = roll6()+parseInt($('.conMod').val());
+      this.one = function () {
+        player.proficency = 2;
+      }
+      this.two = function () {
+        player.proficency = 2;
+      }
+      this.three = function () {
+        player.proficency = 2;
+      }
+      this.four = function () {
+        player.proficency = 2;
+      }
+      this.five = function () {
+        player.proficency = 3;
+      }
+      this.six = function () {
+        player.proficency = 3;
+      }
+      this.seven = function () {
+        player.proficency = 3;
+      }
+      this.eight = function () {
+        player.proficency = 3;
+      }
+      this.nine = function () {
+        player.proficency = 4;
+      }
+      this.ten = function () {
+        player.proficency = 4;
+      }
+      this.eleven = function () {
+        player.proficency = 4;
+      }
+      this.twelve = function () {
+        player.proficency = 4;
+      }
+      this.thurteen = function () {
+        player.proficency = 5;
+      }
+      this.fourteen = function () {
+        player.proficency = 5;
+      }
+      this.fifteen = function () {
+        player.proficency = 5;
+      }
+      this.sixteen = function () {
+        player.proficency = 5;
+      }
+      this.seventeen = function () {
+        player.proficency = 6;
+      }
+      this.eighteen = function () {
+        player.proficency = 6;
+      }
+      this.nineteen = function () {
+        player.proficency = 6;
+      }
+      this.twenty = function () {
+        player.proficency = 6;
+      }
+  }
+})
+$(".setRace").on('click',function() {
+  if($(".hu").selected) {
+    // User.prototype.human = function() {
+    //     $(".str").val()= parseInt($(".str").text()) + 1
+    //
+    //     $(".dex").val()= parseInt($(".dex").text()) + 1
+    //
+    //     $(".con").val()= parseInt($(".con").text()) + 1
+    //
+    //     $(".int").val()= parseInt($(".int").text()) + 1
+    //
+    //     $(".wis").val()= parseInt($(".wis").text()) + 1
+    //
+    //     $(".car").val()= parseInt($(".car").text()) + 1
+    // }
+    console.log('varp');
+  }
+  if($(".el").selected){
+    // User.prototype.elf = function () {
+    //   $(".dex").text()= parseInt($(".dex").data()) + 2
+    // }
+    console.log('varp');
+  }
+  if($(".dw").selected){
+    // User.prototype.dwarf = function () {
+    //   $(".con").text()= parseInt($(".con").data()) + 2
+    // }
+    console.log('varp');
+  }
+  if($(".gn").selected){
+    // User.prototype.gnome = function () {
+    //   $(".int").text()= parseInt($(".int").data()) + 2
+    // }
+    console.log('varp');
+  }
+  if($(".ha").selected){
+    // User.prototype.gnome = function () {
+    //   $(".dex").text()= parseInt($(".dex").data()) + 2
+    // }
+    console.log('varp');
+  }
+  if($(".ti").selected){
+    // User.prototype.tiefling = function () {
+    //   $(".car").text()= parseInt($(".car").data()) + 2;
+    //   $(".int").text()= parseInt($(".int").data()) + 1;
+    // }
+    console.log('varp');
+  }
+  if($(".dr").selected){
+    // User.prototype.dragonborn = function () {
+    //   $(".car").text()= parseInt($(".car").data()) + 1;
+    //   $(".str").text()= parseInt($(".str").data()) + 2;
+    // }
+    console.log('varp');
+  }
+  if($(".he").selected){
+    // User.prototype.halfELf = function () {
+    //   $(".int").text()= parseInt($(".int").data()) + 1;
+    //     $(".car").text()= parseInt($(".car").data()) + 2;
+    // }
+    console.log('varp');
+  }
+  if($(".ho").selected){
+    // User.prototype.halfOrc = function () {
+    //   $(".str").text()= parseInt($(".str").data()) + 2;
+    //   $(".con").text()= parseInt($(".con").data()) + 1
+    // }
+    console.log('varp');
+  }
+  else {
+    console.log("I'm broken :(");
+  }
+})
 
 
 });
