@@ -117,7 +117,7 @@ $("#level").on("change", function() {
     //ToDO: Yell at the user.
   }
   var level = $("#level option:selected").text();
-  if (level > 1 && level <= 4) {
+  if (level >= 1 && level <= 4) {
     player.proficency.message = "+2 Proficency Bonus";
     player.proficency.value = 2;
   } else if (level >= 5 && level <= 8){

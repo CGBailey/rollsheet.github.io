@@ -8,3 +8,23 @@ body {
   color: yellow;
   font-size: 2em;
 }
+
+header {
+  background-color: rgba(186, 154, 116, 0.63);
+}
+main {
+  display: flex;
+  background-color: rgba(127, 151, 163, 0.63)
+}
+.rightCol {
+  justify-content: flex-start;
+  flex-grow: 2;
+}
+.centerCol {
+  justify-content: center;
+  flex-grow: 2;
+}
+.sLeft {
+  justify-content: flex-end;
+  flex-grow: 2;
+}
