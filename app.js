@@ -32,13 +32,6 @@ $("#likeBackground").on('click', function(){
 
 })
 
-
-
-
-  // button test
-  $('.muffinButton').on("click", function() {
-    console.log('muffin button')
-  })
 // various dice rollers
 function roll20(){
   var d20Result = Math.floor(Math.random()*20+1);
@@ -104,6 +97,19 @@ function displayUser() {
   $(".car").val(player.originalCharisma);
   $(".carModified").text("(" + player.modifiedCharisma + ")");
   $(".profBo").text(player.proficency.message);
+  $('.strSave,.strSk').text('+ '+player.modifierStrength);
+  $('.dexSave,.dexSk').text('+ '+player.modifierDexterity);
+  $('.conSave,.conSk').text('+ '+player.modifierConstitution);
+  $('.intSave,.intSk').text('+ '+player.modifierIntelligence);
+  $('.wisSave,.wisSk').text('+ '+player.modifierWisdom);
+  $('.carSave,.carSk').text('+ '+player.modifierCharisma);
+  $('.strSave,.strSk,.profY').not('.reg').text('+ '+(player.modifierStrength+player.proficency.value));
+  $('.dexSave,.dexSk,.profY').not('.reg').text('+ '+(player.modifierDexterity+player.proficency.value));
+  $('.conSave,.conSk,.profY').not('.reg').text('+ '+(player.modifierConstitution+player.proficency.value));
+  $('.intSave,.intSk,.profY').not('.reg').text('+ '+(player.modifierIntelligence+player.proficency.value));
+  $('.wisSave,.wisSk,.profY').not('.reg').text('+ '+(player.modifierWisdom+player.proficency.value));
+  $('.carSave,.carSk,.profY').not('.reg').text('+ '+(player.modifierCharisma+player.proficency.value));
+
 }
 
 $(".statAtt").on("change", function() {
@@ -144,55 +150,54 @@ $("#level").on("change", function() {
 // sets the character class attributes such as hit dice and proficency dice
 $("#class").on("change",function(){
   var selected = $("#class option:selected").attr("class");
-  console.log(player.hitDice);
   switch (selected) {
     case "bar":
-      player.hitDice = "d12";
-      console.log(player.hiDice);
+      $('.strSave,.strSk,.conSave,.conSk').addClass('profY').removeClass('reg');
+      $('.dexSave,.dexSk,.intSave,.intSk,.wisSave,.wisSk,.carSave,.carSk').removeClass('profY').addClass('reg');
       break;
     case "bard":
-      player.hitDice = "d8";
-      console.log(player.hiDice);
+    $('.carSave,.carSk,.dexSave,.dexSk').addClass('profY').removeClass('reg');
+    $('.conSave,.conSk,.intSave,.intSk,.wisSave,.wisSk,.strSave,.strSk').removeClass('profY').addClass('reg');
       break;
     case "cle":
-      player.hitDice = 'd8';
-      console.log(player.hiDice);
+    $('.wisSave,.wisSk,.carSave,.carSk').addClass('profY').removeClass('reg');
+    $('.dexSave,.dexSk,.intSave,.intSk,.strSave,.strSk,.conSave,.conSk').removeClass('profY').addClass('reg');
       break;
     case "dru":
-      player.hitDice = "d8";
-      console.log(player.hiDice);
+    $('.wisSave,.wisSk,.intSave,.intSk').addClass('profY').removeClass('reg');
+    $('.dexSave,.dexSk,.conSave,.conSk,.strSave,.strSk,.carSave,.carSk').removeClass('profY').addClass('reg');
       break;
     case "fig":
-      player.hitDice = "d10";
-      console.log(player.hiDice);
+      $('.strSave,.strSk,.conSave,.conSk').addClass('profY').removeClass('reg');
+      $('.dexSave,.dexSk,.intSave,.intSk,.wisSave,.wisSk,.carSave,.carSk').removeClass('profY').addClass('reg');
     break;
     case "mon":
-      player.hitDice = "d8";
-      console.log(player.hiDice);
+      $('.strSave,.strSk,.dexSave,.dexSk').addClass('profY').removeClass('reg');
+      $('.conSave,.conSk,.intSave,.intSk,.wisSave,.wisSk,.carSave,.carSk').removeClass('profY').addClass('reg');
       break;
     case "pal":
-      player.hitDice = "d10";
-      console.log(player.hiDice);
+    $('.wisSave,.wisSk,.carSave,.carSk').addClass('profY').removeClass('reg');
+    $('.dexSave,.dexSk,.intSave,.intSk,.strSave,.strSk,.conSave,.conSk').removeClass('profY').addClass('reg');
       break;
     case "ran":
-      player.hitDice = "d10";
-      console.log(player.hiDice);
+      $('.strSave,.strSk,.dexSave,.dexSk').addClass('profY').removeClass('reg');
+      $('.conSave,.conSk,.intSave,.intSk,.wisSave,.wisSk,.carSave,.carSk').removeClass('profY').addClass('reg');
       break;
     case "rou":
-      player.hitDice = "d8";
-      console.log(player.hiDice);
+    $('.intSave,.intSk,.dexSave,.dexSk').addClass('profY').removeClass('reg');
+    $('.conSave,.conSk,.strSave,.strSk,.wisSave,.wisSk,.carSave,.carSk').removeClass('profY').addClass('reg');
       break;
     case "soc":
-      player.hitDice = "d6";
-      console.log(player.hiDice);
+    $('.carSave,.carSk,.conSave,.conSk').addClass('profY').removeClass('reg');
+    $('.dexSave,.dexSk,.intSave,.intSk,.wisSave,.wisSk,.strSave,.strSk').removeClass('profY').addClass('reg');
       break;
     case "war":
-      player.hitDice = "d8";
-      console.log(player.hiDice);
+    $('.wisSave,.wisSk,.carSave,.carSk').addClass('profY').removeClass('reg');
+    $('.dexSave,.dexSk,.conSave,.conSk,.strSave,.strSk,.intSave,.intSk').removeClass('profY').addClass('reg');
       break;
     case "wiz":
-      player.hitDice = "d6";
-      console.log(player.hiDice);
+    $('.wisSave,.wisSk,.intSave,.intSk').addClass('profY').removeClass('reg');
+    $('.dexSave,.dexSk,.conSave,.conSk,.strSave,.strSk,.carSave,.carSk').removeClass('profY').addClass('reg');
       break;
     default:
 
@@ -279,7 +284,7 @@ $("#race").on('change',function() {
     default:
 
   }
-});
+
 
   function mods() {
     if(player.modifiedStrength === 8 || player.modifiedStrength === 9){
@@ -492,17 +497,11 @@ $("#race").on('change',function() {
       player.modifierCharisma = 5
       console.log("marp");
     }
-    $('.strSave,.strSk').text('+ '+player.modifierStrength);
-    $('.dexSave,.dexSk').text('+ '+player.modifierDexterity);
-    $('.conSave,.conSk').text('+ '+player.modifierConstitution);
-    $('.intSave,.intSk').text('+ '+player.modifierIntelligence);
-    $('.wisSave,.wisSk').text('+ '+player.modifierWisdom);
-    $('.carSave,.carSk').text('+ '+player.modifierCharisma);
     console.log(player);
   };
   mods();
 
   displayUser(player);
 
-
+  });
 });
