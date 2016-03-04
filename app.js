@@ -113,7 +113,14 @@ function displayUser() {
 }
 
 $(".statAtt").on("change", function() {
+  if(statTest.test($(this).val())) {
   player[$(this).attr('name')] = Number($(this).val());
+  $(this).removeClass('error');
+}else{
+  $(this).addClass('error');
+  alert("input any number between 8 and 20");
+  event.preventDefault();
+}
 })
 
 
@@ -125,27 +132,26 @@ $("#level").on("change", function() {
   }
   var level = $("#level option:selected").text();
   if (level >= 1 && level <= 4) {
-    player.proficency.message = "+2 Proficency Bonus";
+    player.proficency.message = "+2  Proficiency Bonus";
     player.proficency.value = 2;
   } else if (level >= 5 && level <= 8){
-    player.proficency.message = "+3 Proficency Bonus";
+    player.proficency.message = "+3 Proficiency Bonus";
     player.proficency.value = 3;
   }
   else if (level >= 9 && level <= 12){
-    player.proficency.message = "+4 Proficency Bonus";
+    player.proficency.message = "+4 Proficiency Bonus";
     player.proficency.value = 4;
   }
   else if (level >= 13 && level <= 16){
-    player.proficency.message = "+5 Proficency Bonus";
+    player.proficency.message = "+5 Proficiency Bonus";
     player.proficency.value = 5;
   }
   else {
-    player.proficency.message = "+6 Proficency Bonus";
+    player.proficency.message = "+6 Proficiency Bonus";
     player.proficency.value = 6;
   }
 
     displayUser(player);
-    console.log(player);
 });
 // sets the character class attributes such as hit dice and proficency dice
 $("#class").on("change",function(){
@@ -202,6 +208,7 @@ $("#class").on("change",function(){
     default:
 
 }
+displayUser(player);
 });
 
 // sets the racial modifiers for each character
