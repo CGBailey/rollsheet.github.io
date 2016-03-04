@@ -34,3 +34,6 @@ main {
   border: 2px solid black;
   width: 30px;
 }
+h4 {
+  background-color: rgba(150, 131, 156, 0.64);
+}
