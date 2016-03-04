@@ -33,8 +33,23 @@
     <form>
       <label class="charName" for="">Character Name<input type="text" name="name" value=""></input></label>
       <label class="hRight" for="">Player Name<input type="text" name="name" value=""></input></label>
+      <label class="hRight" for="">Race
+        <select id = "race" name="select">
+          <option value="none"></option>
+          <option class = "hu"value="">Human</option>
+          <option class = "el"value="">Elves</option>
+          <option class = "dw"value="">Dwarf</option>
+          <option class = "ha"value="">Halfling</option>
+          <option class = "gn"value="">Gnome</option>
+          <option class = "ti"value="">Tiefling</option>
+          <option class = "dr"value="">Dragonborn</option>
+          <option class = "he"value="">Half-Elf</option>
+          <option class = "ho"value="">Half-Orc</option>
+        </select>
+      </label>
       <label class="hRight" for="">Level
         <select id="level" name="select">
+          <option value="none"></option>
           <option class = "lvl1"value="">1</option>
           <option class = "lvl2"value="">2</option>
           <option class = "lvl3"value="">3</option>
@@ -59,6 +74,7 @@
       </label>
       <label class="hRight" for="">Class
         <select id = "class" name="select">
+          <option value="none"></option>
           <option class = "bar"value="">Barbarian</option>
           <option class = "bard"value="">Bard</option>
           <option class = "cle"value="">Cleric</option>
@@ -73,24 +89,10 @@
           <option class = "wiz"value="">Wizard</option>
         </select>
       </label>
-      <label class="hRight" for="">Race
-        <select id = "race" name="select">
-          <option value="none"></option>
-          <option class = "hu"value="">Human</option>
-          <option class = "el"value="">Elves</option>
-          <option class = "dw"value="">Dwarf</option>
-          <option class = "ha"value="">Halfling</option>
-          <option class = "gn"value="">Gnome</option>
-          <option class = "ti"value="">Tiefling</option>
-          <option class = "dr"value="">Dragonborn</option>
-          <option class = "he"value="">Half-Elf</option>
-          <option class = "ho"value="">Half-Orc</option>
-        </select>
-      </label>
       <label class="hRight" for="">Background<input type="text" name="name" value=""></input></label>
-      <label class="hRight" for="">Experience Points<input type="number" name="name" value=""></input></label>
-      <label class="hRight" for="">Alighnment<input type="text" name="name" value=""></input></label>
+      <label class="hRight" for="">Alighnment
         <select name="select">
+          <option value="none"></option>
           <option value="">Chaotic Good</option>
           <option value="">Neutral Good</option>
           <option value="">Lawful Good</option>
@@ -175,50 +177,50 @@
             </label>
           </section>
           <section class = "savingBox">
-            <label><p class = "strSave"></p>Strength Save</label>
-            <label><p class = "dexSave"></p>Dexterity Save</label>
-            <label><p class = "conSave"></p>Constitution Save</label>
-            <label><p class = "intSave"></p>Intelligence Save</label>
-            <label><p class = "wisSave"></p>Wisdom Save</label>
-            <label><p class = "carSave"></p>Charisma Save</label>
+            <label><p class = "strSave skill"></p>Strength Save</label>
+            <label><p class = "dexSave skill"></p>Dexterity Save</label>
+            <label><p class = "conSave skill"></p>Constitution Save</label>
+            <label><p class = "intSave skill"></p>Intelligence Save</label>
+            <label><p class = "wisSave skill"></p>Wisdom Save</label>
+            <label><p class = "carSave skill"></p>Charisma Save</label>
           </section>
         </section>
           <section class="centerCol">
           <section class = "skillBox">
-            <label><p class = "acro dexSk"></p>Acrobatics</label>
-            <label><p class = "anim wisSk"></p>Animal Handiling</label>
-            <label><p class = "arca intSk"></p>Arcana</label>
-            <label><p class = "athl strSk"></p>Athletics</label>
-            <label><p class = "dece carSk"></p>Deception</label>
-            <label><p class = "hist intSk"></p>History</label>
-            <label><p class = "insi wisSk"></p>Insight</label>
-            <label><p class = "inti carSk"></p>Intimidate</label>
-            <label><p class = "inve intSk"></p>Investigation</label>
-            <label><p class = "medi wisSk"></p>Medicine</label>
-            <label><p class = "natu intSk"></p>Nature</label>
-            <label><p class = "perc wisSk"></p>Perception</label>
-            <label><p class = "perf carSk"></p>Performence</label>
-            <label><p class = "pers carSk"></p>Persuasion</label>
-            <label><p class = "relg intSk"></p>Religon</label>
-            <label><p class = "slei dexSk"></p>Sleight of Hand</label>
-            <label><p class = "stea dexSk"></p>Stealth</label>
-            <label><p class = "surv wisSk"></p>Survival</label>
+            <label>Acrobatics<p class = "acro dexSk skill"></p></label>
+            <label>Animal Handiling<p class = "anim wisSk skill"></p></label>
+            <label>Arcana<p class = "arca intSk skill"></p></label>
+            <label>Athletics<p class = "athl strSk skill"></p></label>
+            <label>Deception<p class = "dece carSk skill"></p></label>
+            <label>History<p class = "hist intSk skill"></p></label>
+            <label>Insight<p class = "insi wisSk skill"></p></label>
+            <label>Intimidate<p class = "inti carSk skill"></p></label>
+            <label>Investigation<p class = "inve intSk skill"></p></label>
+            <label>Medicine<p class = "medi wisSk skill"></p></label>
+            <label>Nature<p class = "natu intSk skill"></p></label>
+            <label>Perception<p class = "perc wisSk skill"></p></label>
+            <label>Performence<p class = "perf carSk skill"></p></label>
+            <label>Persuasion<p class = "pers carSk skill"></p></label>
+            <label>Religon<p class = "relg intSk skill"></p></label>
+            <label>Sleight of Hand<p class = "slei dexSk skill"></p></label>
+            <label>Stealth<p class = "stea dexSk skill"></p></label>
+            <label>Survival<p class = "surv wisSk skill"></p></label>
           </section>
         </section>
         <section class="sLeft">
+          <section class = "notes">
+          <label for=""><textarea name="name" rows="8" cols="40"></textarea>Notes</label>
+          </section>
           <section class = "langBox">
-          <label for="">Proficences and Lanuges <textarea name="name" rows="8" cols="40"></textarea></label>
+          <label for=""><textarea name="name" rows="8" cols="40"></textarea>Proficences and Languages</label>
           </section>
             <section class = "armorClass">
-              Armor Class
               <p></p>
             </section>
             <section class = "initiative">
-              Intiative
               <p></p>
             </section>
             <section class = "speed">
-              Speed
               <p></p>
             </section>
         <section class = "hitPoints">

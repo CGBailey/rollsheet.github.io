@@ -11,10 +11,12 @@ body {
 
 header {
   background-color: rgba(186, 154, 116, 0.63);
+  font-family: Didot;
 }
 main {
   display: flex;
-  background-color: rgba(127, 151, 163, 0.63)
+  background-color: rgba(127, 151, 163, 0.63);
+  font-family: Didot;
 }
 .rightCol {
   justify-content: flex-start;
@@ -27,4 +29,8 @@ main {
 .sLeft {
   justify-content: flex-end;
   flex-grow: 2;
+}
+.skill {
+  border: 2px solid black;
+  width: 30px;
 }

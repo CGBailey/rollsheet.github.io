@@ -85,6 +85,7 @@ function User () {
   this.originalCharisma = 0;
   this.modifiedCharisma = 0;
   this.modifierCharisma = 0;
+  this.hitDice = "0"
 };
 
 var player = new User();
@@ -141,72 +142,62 @@ $("#level").on("change", function() {
     console.log(player);
 });
 // sets the character class attributes such as hit dice and proficency dice
-$(".setClass").on("click",function(){
-  if($(".bar").selected){
-    console.log("working")
-    User.prototype.class=
-      User.prototype.hitDice = roll12()+parseInt($('.conMod').val());
+$("#class").on("change",function(){
+  var selected = $("#class option:selected").attr("class");
+  console.log(player.hitDice);
+  switch (selected) {
+    case "bar":
+      player.hitDice = "d12";
+      console.log(player.hiDice);
+      break;
+    case "bard":
+      player.hitDice = "d8";
+      console.log(player.hiDice);
+      break;
+    case "cle":
+      player.hitDice = 'd8';
+      console.log(player.hiDice);
+      break;
+    case "dru":
+      player.hitDice = "d8";
+      console.log(player.hiDice);
+      break;
+    case "fig":
+      player.hitDice = "d10";
+      console.log(player.hiDice);
+    break;
+    case "mon":
+      player.hitDice = "d8";
+      console.log(player.hiDice);
+      break;
+    case "pal":
+      player.hitDice = "d10";
+      console.log(player.hiDice);
+      break;
+    case "ran":
+      player.hitDice = "d10";
+      console.log(player.hiDice);
+      break;
+    case "rou":
+      player.hitDice = "d8";
+      console.log(player.hiDice);
+      break;
+    case "soc":
+      player.hitDice = "d6";
+      console.log(player.hiDice);
+      break;
+    case "war":
+      player.hitDice = "d8";
+      console.log(player.hiDice);
+      break;
+    case "wiz":
+      player.hitDice = "d6";
+      console.log(player.hiDice);
+      break;
+    default:
 
-  }
-  if($(".bard").selected){
-    console.log('working')
-    User.prototype.class=
-      this.hitDice = roll8()+parseInt($('.conMod').val());
-
-  }
-  if($(".cle").selected){
-    console.log('working');
-    User.prototype.class=
-      this.hitDice = roll8()+parseInt($('.conMod').val());
-
-  }
-  if($(".dru").selected){
-    console.log('working');
-    User.prototype.druid=
-      this.hitDice = roll8()+parseInt($('.conMod').val());
-  }
-  if($(".fig").selected){
-    console.log('working');
-    User.prototype.figther=
-      this.hitDice = roll10()+parseInt($('.conMod').val());
-  }
-  if($(".mon").selected){
-    console.log('working');
-    User.prototype.monk=
-      this.hitDice = roll8()+parseInt($('.conMod').val());
-  }
-  if($(".pal").selected){
-    console.log('working');
-    User.prototype.paladin=
-      this.hitDice = roll10()+parseInt($('.conMod').val());
-  }
-  if($(".ran").selected){
-    console.log('working');
-    User.prototype.ranger=
-      this.hitDice = roll10()+parseInt($('.conMod').val());
-  }
-  if($(".rou").selected){
-    console.log('working');
-    User.prototype.rouge =
-      this.hitDice = roll8()+parseInt($('.conMod').val());
-  }
-  if($(".soc").selected){
-    console.log('working');
-    User.prototype.sorceror =
-      this.hitDice = roll6()+parseInt($('.conMod').val());
-  }
-  if($(".war").selected){
-    console.log('working');
-    User.prototype.warlock =
-      this.hitDice = roll8()+parseInt($('.conMod').val());
-  }
-  if($(".wiz").selected){
-    console.log('working');
-    User.prototype.wizard=
-      this.hitDice = roll6()+parseInt($('.conMod').val());
-
-  }
-})
+}
+});
 
 // sets the racial modifiers for each character
 $("#race").on('change',function() {
@@ -288,6 +279,7 @@ $("#race").on('change',function() {
     default:
 
   }
+});
 
   function mods() {
     if(player.modifiedStrength === 8 || player.modifiedStrength === 9){
@@ -500,83 +492,17 @@ $("#race").on('change',function() {
       player.modifierCharisma = 5
       console.log("marp");
     }
+    $('.strSave,.strSk').text('+ '+player.modifierStrength);
+    $('.dexSave,.dexSk').text('+ '+player.modifierDexterity);
+    $('.conSave,.conSk').text('+ '+player.modifierConstitution);
+    $('.intSave,.intSk').text('+ '+player.modifierIntelligence);
+    $('.wisSave,.wisSk').text('+ '+player.modifierWisdom);
+    $('.carSave,.carSk').text('+ '+player.modifierCharisma);
     console.log(player);
   };
   mods();
 
   displayUser(player);
 
-  if($(".hu").selected) {
-    // User.prototype.race = function() {
-    //     $(".str").val()= parseInt($(".str").text()) + 1
-    //
-    //     $(".dex").val()= parseInt($(".dex").text()) + 1
-    //
-    //     $(".con").val()= parseInt($(".con").text()) + 1
-    //
-    //     $(".int").val()= parseInt($(".int").text()) + 1
-    //
-    //     $(".wis").val()= parseInt($(".wis").text()) + 1
-    //
-    //     $(".car").val()= parseInt($(".car").text()) + 1
-    // }
-    console.log('varp');
-  }
-  if($(".el").selected){
-    // User.prototype.race = function () {
-    //   $(".dex").text()= parseInt($(".dex").data()) + 2
-    // }
-    console.log('varp');
-  }
-  if($(".dw").selected){
-    // User.prototype.race = function () {
-    //   $(".con").text()= parseInt($(".con").data()) + 2
-    // }
-    console.log('varp');
-  }
-  if($(".gn").selected){
-    // User.prototype.gnome = function () {
-    //   $(".int").text()= parseInt($(".int").data()) + 2
-    // }
-    console.log('varp');
-  }
-  if($(".ha").selected){
-    // User.prototype.gnome = function () {
-    //   $(".dex").text()= parseInt($(".dex").data()) + 2
-    // }
-    console.log('varp');
-  }
-  if($(".ti").selected){
-    // User.prototype.tiefling = function () {
-    //   $(".car").text()= parseInt($(".car").data()) + 2;
-    //   $(".int").text()= parseInt($(".int").data()) + 1;
-    // }
-    console.log('varp');
-  }
-  if($(".dr").selected){
-    // User.prototype.dragonborn = function () {
-    //   $(".car").text()= parseInt($(".car").data()) + 1;
-    //   $(".str").text()= parseInt($(".str").data()) + 2;
-    // }
-    console.log('varp');
-  }
-  if($(".he").selected){
-    // User.prototype.halfELf = function () {
-    //   $(".int").text()= parseInt($(".int").data()) + 1;
-    //     $(".car").text()= parseInt($(".car").data()) + 2;
-    // }
-    console.log('varp');
-  }
-  if($(".ho").selected){
-    // User.prototype.halfOrc = function () {
-    //   $(".str").text()= parseInt($(".str").data()) + 2;
-    //   $(".con").text()= parseInt($(".con").data()) + 1
-    // }
-    console.log('varp');
-  }
-  else {
-    console.log("I'm broken :(");
-  }
-})
 
 });
